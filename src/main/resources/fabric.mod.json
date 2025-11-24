@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "ozone",
+  "version": "${version}",
+  "name": "Ozone",
+  "description": "A common code library and some examples I commonly use in my older mods.",
+  "authors": [
+    "Chemthunder"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/Chemthunder/ozone"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/ozone/ozone_icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "silly.chemthunder.ozone.impl.Ozone"
+    ],
+    "fabric-datagen": [
+      "silly.chemthunder.ozone.impl.OzoneDataGenerator"
+    ]
+  },
+  "mixins": [
+    "ozone.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
